@@ -1,0 +1,120 @@
+\section{SCBot Commands \& Usage}
+
+\subsection{General Usage}
+
+\subsubsection{Discord Terms}
+\paragraph{IDs}
+\label{discord:message-id}
+
+\subsection{List of Commands}
+
+\subsubsection{Alias}
+\begin{description}
+	\item[\command{alias}]\label{com:alias}\index{alias}
+		The alias command is used to create aliases, which are shortcuts to other commands. For example, rather than typing \command{alias add}, it could be shortened to \command{aa}.
+		
+	\begin{description}
+		\item[\command{alias add $<$command$>$ $<$to\_execute$>$}]\label{com:alias-add}
+			Adds an alias to a command. Example: \command{alias add aa alias add}
+			
+		\item[\command{alias del $<$command$>$}]\label{com:alias-del}
+			Deletes an alias. Example: \command{alias del aa}
+			
+		\item[\command{alias help $<$command$>$}]\label{com:alias-help}
+			Attempts to give help for the aliased command. Example: \command{alias help aa} should return the help for \command{alias add}.
+			
+		\item[\command{alias list}]\label{com:alias-list}
+			Lists all the aliases in the server. Sends to DMs.
+			
+		\item[\command{alias show $<$command$>$}]\label{com:alias-show}
+			Shows what an alias executes. Example: \command{alias show aa} responds with \texttt{alias add}.
+	\end{description}
+\end{description}
+
+\subsubsection{Ascii}
+\begin{description}
+	\item[\command{ascii $<$text$>$}]\label{com:ascii}\index{ascii}
+		Expands text into block ASCII form.
+\end{description}
+
+\subsubsection{AutoInfo}
+
+\subsubsection{Autorole}
+
+\subsubsection{Avatar}
+
+\subsubsection{Bigmoji}
+
+\subsubsection{Blizzard}
+
+\subsubsection{ChannelLogger}
+
+\subsubsection{ConfigStore}
+
+\subsubsection{Dice}
+
+\subsubsection{Drawing}
+
+\subsubsection{Economy}
+
+\subsubsection{Filterban}
+
+\subsubsection{General}
+
+\subsubsection{Giveme}
+
+\subsubsection{Kickrole}
+
+\subsubsection{Mod}
+\begin{description}
+	
+	\item[\command{cleanup}]\label{com:cleanup}\index{cleanup}
+		Deletes a number of messages, depending on the argument you give it.
+		
+	\begin{description}
+		
+		\item[\command{cleanup messages $<$number$>$}]\label{com:cleanup-messages}
+			Deletes the number of messages you specify, plus the message you sent to trigger the command.
+		\item[\command{cleanup after $<$id$>$}]\label{com:cleanup-after}
+			Deletes all messages after a specified message, using the \hyperref[discord:message-id]{message ID} to refer to a message.
+			
+	\end{description}
+
+	\item[\command{filter}]\label{com:filter}\index{cleanup}
+		Allows you to filter messages that are sent with certain banned words, deleting them instantly.
+		
+\end{description}
+
+\subsubsection{Modlog}
+
+\subsubsection{NeedsMoreJpeg}
+
+\subsubsection{Pic}
+
+\subsubsection{RCG}
+
+\subsubsection{Ratewaifu}
+
+\subsubsection{ReactPoll}
+
+\subsubsection{Register}
+
+\subsubsection{RemindMe}
+
+\subsubsection{Scheduler}
+
+\subsubsection{Spoiler}
+
+\subsubsection{Steam}
+
+\subsubsection{Stickyroles}
+
+\subsubsection{Streams}
+
+\subsubsection{Trivia}
+
+\subsubsection{Welcome}
+
+\subsubsection{Say}
+
+% Etc - one subsubsection for each cog

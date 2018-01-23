@@ -1,0 +1,37 @@
+\documentclass[twoside,a4paper]{refart}
+
+\usepackage[]{hyperref}
+\usepackage{makeidx}
+\usepackage{xifthen}
+
+\title{SCBot Manual}
+\author{Zizzeren}
+
+\date{}
+
+\makeindex
+
+\setcounter{tocdepth}{3}
+
+% Defines the bot's global prefix. Use \renewcommand if your server has a custom prefix.
+\newcommand{\prefix}[1]{!#1}
+% Defines a \command macro, which places the prefix and can optionally hyperlink to a command's label.
+\newcommand{\command}[2][]{
+	\ifthenelse{\equal{#1}{}}
+	{\texttt{\prefix #2}}
+	{\hyperref[#1]{\texttt{\prefix #2}}}
+}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\include{scbot-manual}
+\include{scbot-sonic}
+
+\printindex
+
+\end{document}
